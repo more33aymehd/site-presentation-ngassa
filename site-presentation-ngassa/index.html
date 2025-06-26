@@ -4,11 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Entreprise École</title>
-	<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 
-  <!-- En-tête / Accueil -->
+  <!-- Menu Navigation -->
+  <nav class="navbar">
+    <div class="container nav__content">
+      <h1 class="nav__logo">Entreprise École</h1>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#a-propos">À propos</a></li>
+        <li><a href="#equipe">Équipe</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav__burger" id="burger">&#9776;</div>
+    </div>
+  </nav>
+
+  <!-- Accueil -->
   <header class="header" id="accueil">
     <div class="container">
       <h1 class="header__title">Bienvenue à l’Entreprise École</h1>
@@ -16,74 +31,273 @@
     </div>
   </header>
 
-  <!-- Section Services -->
+  <!-- Services -->
   <section class="services" id="services">
     <div class="container">
       <h2 class="section-title">Nos Services</h2>
-      
       <div class="services__list">
         <article class="service">
           <h3 class="service__title">Développement Web</h3>
-          <p class="service__description">Création de sites internet modernes et responsives par nos étudiants.</p>
+          <p class="service__description">Création de sites internet modernes et responsives.</p>
         </article>
-
         <article class="service">
           <h3 class="service__title">Design Graphique</h3>
-          <p class="service__description">Conception de logos, affiches et supports visuels professionnels.</p>
+          <p class="service__description">Conception de supports visuels professionnels.</p>
         </article>
-
         <article class="service">
           <h3 class="service__title">Marketing Digital</h3>
-          <p class="service__description">Stratégies de communication et présence sur les réseaux sociaux.</p>
+          <p class="service__description">Stratégies de communication digitale.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- Section À propos -->
+  <!-- À propos -->
   <section class="about" id="a-propos">
     <div class="container">
       <h2 class="section-title">À propos de nous</h2>
-      <p class="about__text">Entreprise École est une structure pédagogique permettant aux étudiants de mettre en pratique leurs compétences dans des projets réels.</p>
+      <p class="about__text">Structure pédagogique pour projets concrets réalisés par des étudiants.</p>
     </div>
   </section>
 
-  <!-- Section Équipe -->
+  <!-- Équipe -->
   <section class="team" id="equipe">
     <div class="container">
       <h2 class="section-title">Notre Équipe</h2>
-      <p class="team__text">Composée d'étudiants motivés encadrés par des professionnels, notre équipe travaille en collaboration sur chaque projet.</p>
+      <p class="team__text">Des étudiants motivés encadrés par des professionnels.</p>
     </div>
   </section>
 
-  <!-- Section Contact -->
+  <!-- Contact -->
   <section class="contact" id="contact">
     <div class="container">
       <h2 class="section-title">Contactez-nous</h2>
       <p class="contact__info">Email : contact@entreprise-ecole.com</p>
       <p class="contact__info">Téléphone : +237 699 99 99 99</p>
-      
       <form class="contact__form">
         <label for="nom">Nom :</label>
-        <input type="text" id="nom" name="nom" class="contact__input" required><br>
+        <input type="text" id="nom" name="nom" class="contact__input" required>
 
         <label for="email">Email :</label>
-        <input type="email" id="email" name="email" class="contact__input" required><br>
+        <input type="email" id="email" name="email" class="contact__input" required>
 
-        <label for="message">Message :</label><br>
-        <textarea id="message" name="message" rows="5" class="contact__textarea" required></textarea><br>
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="5" class="contact__textarea" required></textarea>
 
         <button type="submit" class="contact__button">Envoyer</button>
       </form>
     </div>
   </section>
 
-  <!-- Pied de page -->
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <p class="footer__text">&copy; 2025 Entreprise École - Tous droits réservés</p>
     </div>
   </footer>
 
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Entreprise École</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Menu Navigation -->
+  <nav class="navbar">
+    <div class="container nav__content">
+      <h1 class="nav__logo">Entreprise École</h1>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#a-propos">À propos</a></li>
+        <li><a href="#equipe">Équipe</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav__burger" id="burger">&#9776;</div>
+    </div>
+  </nav>
+
+  <!-- Accueil -->
+  <header class="header" id="accueil">
+    <div class="container">
+      <h1 class="header__title">Bienvenue à l’Entreprise École</h1>
+      <p class="header__subtitle">Nous formons les leaders de demain grâce à des projets concrets et innovants.</p>
+    </div>
+  </header>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <div class="container">
+      <h2 class="section-title">Nos Services</h2>
+      <div class="services__list">
+        <article class="service">
+          <h3 class="service__title">Développement Web</h3>
+          <p class="service__description">Création de sites internet modernes et responsives.</p>
+        </article>
+        <article class="service">
+          <h3 class="service__title">Design Graphique</h3>
+          <p class="service__description">Conception de supports visuels professionnels.</p>
+        </article>
+        <article class="service">
+          <h3 class="service__title">Marketing Digital</h3>
+          <p class="service__description">Stratégies de communication digitale.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- À propos -->
+  <section class="about" id="a-propos">
+    <div class="container">
+      <h2 class="section-title">À propos de nous</h2>
+      <p class="about__text">Structure pédagogique pour projets concrets réalisés par des étudiants.</p>
+    </div>
+  </section>
+
+  <!-- Équipe -->
+  <section class="team" id="equipe">
+    <div class="container">
+      <h2 class="section-title">Notre Équipe</h2>
+      <p class="team__text">Des étudiants motivés encadrés par des professionnels.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Contactez-nous</h2>
+      <p class="contact__info">Email : contact@entreprise-ecole.com</p>
+      <p class="contact__info">Téléphone : +237 699 99 99 99</p>
+      <form class="contact__form">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" class="contact__input" required>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" class="contact__input" required>
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="5" class="contact__textarea" required></textarea>
+
+        <button type="submit" class="contact__button">Envoyer</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">&copy; 2025 Entreprise École - Tous droits réservés</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Entreprise École</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Menu Navigation -->
+  <nav class="navbar">
+    <div class="container nav__content">
+      <h1 class="nav__logo">Entreprise École</h1>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#a-propos">À propos</a></li>
+        <li><a href="#equipe">Équipe</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav__burger" id="burger">&#9776;</div>
+    </div>
+  </nav>
+
+  <!-- Accueil -->
+  <header class="header" id="accueil">
+    <div class="container">
+      <h1 class="header__title">Bienvenue à l’Entreprise École</h1>
+      <p class="header__subtitle">Nous formons les leaders de demain grâce à des projets concrets et innovants.</p>
+    </div>
+  </header>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <div class="container">
+      <h2 class="section-title">Nos Services</h2>
+      <div class="services__list">
+        <article class="service">
+          <h3 class="service__title">Développement Web</h3>
+          <p class="service__description">Création de sites internet modernes et responsives.</p>
+        </article>
+        <article class="service">
+          <h3 class="service__title">Design Graphique</h3>
+          <p class="service__description">Conception de supports visuels professionnels.</p>
+        </article>
+        <article class="service">
+          <h3 class="service__title">Marketing Digital</h3>
+          <p class="service__description">Stratégies de communication digitale.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- À propos -->
+  <section class="about" id="a-propos">
+    <div class="container">
+      <h2 class="section-title">À propos de nous</h2>
+      <p class="about__text">Structure pédagogique pour projets concrets réalisés par des étudiants.</p>
+    </div>
+  </section>
+
+  <!-- Équipe -->
+  <section class="team" id="equipe">
+    <div class="container">
+      <h2 class="section-title">Notre Équipe</h2>
+      <p class="team__text">Des étudiants motivés encadrés par des professionnels.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Contactez-nous</h2>
+      <p class="contact__info">Email : contact@entreprise-ecole.com</p>
+      <p class="contact__info">Téléphone : +237 699 99 99 99</p>
+      <form class="contact__form">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" class="contact__input" required>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" class="contact__input" required>
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="5" class="contact__textarea" required></textarea>
+
+        <button type="submit" class="contact__button">Envoyer</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">&copy; 2025 Entreprise École - Tous droits réservés</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
